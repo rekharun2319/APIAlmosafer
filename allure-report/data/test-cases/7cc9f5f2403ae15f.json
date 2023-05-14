@@ -1,0 +1,74 @@
+{
+  "uid" : "7cc9f5f2403ae15f",
+  "name" : "getCall",
+  "fullName" : "testCase.TC_ApiCalls.getCall",
+  "historyId" : "11d0cc14f71e799eb875a7730727b905",
+  "time" : {
+    "start" : 1684043554617,
+    "stop" : 1684043557658,
+    "duration" : 3041
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCase.TC_ApiCalls"
+  }, {
+    "name" : "testClass",
+    "value" : "testCase.TC_ApiCalls"
+  }, {
+    "name" : "testMethod",
+    "value" : "getCall"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default suite"
+  }, {
+    "name" : "suite",
+    "value" : "Default test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCase.TC_ApiCalls"
+  }, {
+    "name" : "host",
+    "value" : "ADJ-Azuz-STRIX"
+  }, {
+    "name" : "thread",
+    "value" : "7520@ADJ-Azuz-STRIX.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Validating the response through GET call"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2f47700789b12f9c",
+      "status" : "broken",
+      "statusDetails" : "headers cannot be null",
+      "time" : {
+        "start" : 1684043457655,
+        "stop" : 1684043458711,
+        "duration" : 1056
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7cc9f5f2403ae15f.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,60 @@
+{
+  "uid" : "bb735e6442e208e8",
+  "name" : "postCall",
+  "fullName" : "testCase.TC_PostCall.postCall",
+  "historyId" : "e724faa0d39b64dc0620dc1bac6bcfbf",
+  "time" : {
+    "start" : 1683902250824,
+    "stop" : 1683902254125,
+    "duration" : 3301
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCase.TC_PostCall"
+  }, {
+    "name" : "testClass",
+    "value" : "testCase.TC_PostCall"
+  }, {
+    "name" : "testMethod",
+    "value" : "postCall"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default suite"
+  }, {
+    "name" : "suite",
+    "value" : "Default test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCase.TC_PostCall"
+  }, {
+    "name" : "host",
+    "value" : "ADJ-Azuz-STRIX"
+  }, {
+    "name" : "thread",
+    "value" : "12952@ADJ-Azuz-STRIX.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bb735e6442e208e8.json",
+  "parameterValues" : [ ]
+}

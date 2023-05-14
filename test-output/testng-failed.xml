@@ -5,7 +5,7 @@
     <classes>
       <class name="testCase.TC_ApiCalls">
         <methods>
-          <include name="getCall"/>
+          <include name="postCall"/>
         </methods>
       </class> <!-- testCase.TC_ApiCalls -->
     </classes>

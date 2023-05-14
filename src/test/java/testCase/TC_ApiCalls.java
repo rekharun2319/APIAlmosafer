@@ -5,13 +5,18 @@ import static org.hamcrest.Matchers.equalTo;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import org.testng.annotations.Test;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import io.qameta.allure.Step;
 import io.qameta.allure.Story;
@@ -22,7 +27,9 @@ import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import pojo.Airline;
 import pojo.CustPost;
+import pojo.DynamicResponsePriceData;
 import pojo.Leg;
+import pojo.MainResponse;
 import pojo.Pax;
 import pojo.Stops;
 import pojo.getFlightDetails;
@@ -31,9 +38,8 @@ import utilityFiles.Utility;
 
 public class TC_ApiCalls {
 	
-	//@Test
-	@Story("Getting Flight booking details through post/ Giving dynamic request body")
-	public void postCall() throws JsonMappingException, JsonProcessingException
+	@Test
+	@Story("Getting Flight booking details through post/ Giving dynamic request body") void postCall() throws JsonMappingException, JsonProcessingException
 	{
 	
 	//POST Method with utility w/o  pojo
@@ -73,7 +79,23 @@ public class TC_ApiCalls {
 		pax.setAdult(2);
 		pax.setChild(2);
 		pax.setInfant(0);
-		newFlightSearch.setPax(pax);		
+		newFlightSearch.setPax(pax);	
+		
+		        String json = "{\"leg\":[{\"originId\":\"MCT\",\"destinationId\":\"DXB\","
+		        		+ "\"departureFrom\":\"2023-05-14\",\"departureTo\":\"2023-05-19\"},"
+		        		+ "{\"originId\":\"DXB\",\"destinationId\":\"MCT\","
+		        		+ "\"departureFrom\":\"2023-05-14\",\"departureTo\":\"2023-05-19\"}],"
+		        		+ "\"cabin\":\"Economy\",\"pax\":{\"adult\":1,\"child\":0,\"infant\":0},"
+		        		+ "\"stops\":[],\"airline\":[],\"timeSlots\":{},"
+		        		+ "\"airports\":{}}";
+		        
+		        ObjectMapper objectMapper = new ObjectMapper();
+		        
+		        Map<String, DynamicResponsePriceData> priceDataMap = objectMapper.readValue(json, new TypeReference<Map<String, DynamicResponsePriceData>>(){});
+		        
+		        System.out.println(priceDataMap);
+		  
+		
 	
 		//POST Method with utility  pojo
 		Utility RequestUtils = new Utility();	
@@ -82,10 +104,11 @@ public class TC_ApiCalls {
 		headers.put("accept", "application/json");
 		headers.put("content-type", "application/json");
 		
-		Object PostResponse = RequestUtils.sendRequest("POST", headers ,newFlightSearch , CustPost.class);
+		Object PostResponse = RequestUtils.sendRequest("POST", headers ,newFlightSearch , DynamicResponsePriceData.class);
 		System.out.println("From Utility" + PostResponse);
 		
-		}
+}
+
 	
 	/*
 	RestAssured.baseURI="https://www.almosafer.com";
@@ -104,7 +127,7 @@ public class TC_ApiCalls {
 	//JsonPath js = new JsonPath(Resp1);
 	}*/
 
-	@Test
+	//@Test
 	@Story("Validating the response through GET call")
 	public void getCall() {
 	//Final GET method ------------------>  for submitting
