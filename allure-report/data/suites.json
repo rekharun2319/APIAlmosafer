@@ -1,0 +1,47 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Default suite",
+    "children" : [ {
+      "name" : "Default test",
+      "children" : [ {
+        "name" : "testCase.TC_PostCall",
+        "children" : [ {
+          "name" : "postCall",
+          "uid" : "c11aba08f0d9430b",
+          "parentUid" : "7c0f1bda92e7da29283e758ecd5c1be8",
+          "status" : "broken",
+          "time" : {
+            "start" : 1683978531498,
+            "stop" : 1683978536603,
+            "duration" : 5105
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "7c0f1bda92e7da29283e758ecd5c1be8"
+      }, {
+        "name" : "testCase.TC_ApiCalls",
+        "children" : [ {
+          "name" : "getCall",
+          "uid" : "7cc9f5f2403ae15f",
+          "parentUid" : "2b75a10b4b4b30d13fd455769e7cb52b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1684043554617,
+            "stop" : 1684043557658,
+            "duration" : 3041
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "2b75a10b4b4b30d13fd455769e7cb52b"
+      } ],
+      "uid" : "848117670d75f6868e681771989ad50e"
+    } ],
+    "uid" : "2c8837b97293ea01a164a5cd7048ad56"
+  } ]
+}

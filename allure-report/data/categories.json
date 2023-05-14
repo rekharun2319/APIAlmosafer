@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"2023-05-15_2023-05-19\" (class pojo.CustPost), not marked as ignorable (7 known properties: \"stops\", \"pax\", \"timeSlots\", \"cabin\", \"leg\", \"airports\", \"airline\"])\n at [Source: (String)\"{\"2023-05-15_2023-05-19\":{\"price\":1739.84,\"updatedAt\":\"2023-05-10T12:28:24.914Z\"},\"2023-05-14_2023-05-17\":{\"price\":1641.44,\"updatedAt\":\"2023-05-02T10:34:14.013Z\"},\"2023-05-14_2023-05-15\":{\"price\":1769.6,\"updatedAt\":\"2023-05-13T06:22:59.966Z\"}}\"; line: 1, column: 27] (through reference chain: pojo.CustPost[\"2023-05-15_2023-05-19\"])",
+      "children" : [ {
+        "name" : "postCall",
+        "uid" : "c11aba08f0d9430b",
+        "parentUid" : "1930e375e6673945029fefde5038b86b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1683978531498,
+          "stop" : 1683978536603,
+          "duration" : 5105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1930e375e6673945029fefde5038b86b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
