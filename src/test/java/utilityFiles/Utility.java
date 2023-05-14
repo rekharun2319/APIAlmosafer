@@ -5,6 +5,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
@@ -19,15 +22,14 @@ public class Utility {
 	
 	RequestSpecification req;
 	Object ResponseBody = null;
-	//String ResponseBody;
 	
-	public Object sendRequest(String ReqMethod, Map<String, String> headers, Object ReqPayload, Class Response)
+	
+	public Object sendRequest(String ReqMethod, Map<String, String> headers, Object ReqPayload, Class Response) throws JsonMappingException, JsonProcessingException
 	{
 		
 	req = RestAssured.given().baseUri("https://www.almosafer.com")
 			.headers(headers);
 	
-	//headers using maps
 	req.headers(headers);
 	
 	//.headers("accept","application/json")
@@ -45,7 +47,13 @@ public class Utility {
 	 else if(ReqMethod.equals("POST"))
 		 
 		{
-		 ResponseBody = req.body(ReqPayload).when().post("/api/v3/flights/flight/get-fares-calender").then().extract().response().as(Response);
+		 String ResponseContent;
+		 ResponseContent = req.body(ReqPayload).when().post("/api/v3/flights/flight/get-fares-calender").then()
+				 .extract().response().asString();
+		 ObjectMapper objectmapper = new ObjectMapper();
+		 ResponseBody = objectmapper.readValue(ResponseContent, HashMap.class);
+		 
+				 
 		 System.out.println("Inside POST " +ResponseBody);
 		 }
 	 
@@ -54,14 +62,18 @@ public class Utility {
 
 }
 
+
+
 //without pojo
 /*
-public String withoutPojoSendReq(String ReqMethod, Map header, String ReqPayload)
-{
+	public String withoutPojoSendReq(String ReqMethod, Map<String, String> headers, String ReqPayload)
+		{
 	
-req = RestAssured.given().baseUri("https://www.almosafer.com")
-		.headers("accept","application/json")
-		.headers("content-type","application/json");
+	req = RestAssured.given().baseUri("https://www.almosafer.com").headers(headers);
+	req.headers(headers);
+	
+		//.headers("accept","application/json")
+		//.headers("content-type","application/json");
 
  if(ReqMethod.equals("GET"))
  {
@@ -74,12 +86,12 @@ req = RestAssured.given().baseUri("https://www.almosafer.com")
 		 {
 	 ResponseBody = req.body(ReqPayload).when().post("/api/v3/flights/flight/get-fares-calender")
 			 .then().extract().response().asString();
-	 System.out.println("Inside POST " +ResponseBody);
+	 System.out.println("w/o pojo Inside POST " +ResponseBody);
 		 }
 return ResponseBody;
 
-}
-*/
+	}
+}	*/
 
 
 

@@ -20,14 +20,11 @@ public class PayLoad {
 	{
 	
        
-        
-		return "{\"leg\":[{\"originId\":\"MCT\",\"destinationId\":\"DXB\","
-				+ "\"departureFrom\":\"2023-05-13\",\"departureTo\":\"2023-05-19\"},"
-				+ "{\"originId\":\"DXB\",\"destinationId\":\"MCT\","
-				+ "\"departureFrom\":\"2023-05-13\",\"departureTo\":\"2023-05-19\"}],"
-				+ "\"cabin\":\"Economy\",\"pax\":{\"adult\":1,\"child\":0,\"infant\":0},"
-				+ "\"stops\":[],\"airline\":[],\"timeSlots\":{},\"airports\":{}}";
-	
+        return "{\"leg\":[{\"originId\":\"MCT\",\"destinationId\":\"DXB\",\"departureFrom\":\"2023-05-14\","
+        		+ "\"departureTo\":\"2023-05-19\"},{\"originId\":\"DXB\",\"destinationId\":\"MCT\","
+        		+ "\"departureFrom\":\"2023-05-14\",\"departureTo\":\"2023-05-19\"}],\"cabin\":\"Economy\","
+        		+ "\"pax\":{\"adult\":1,\"child\":0,\"infant\":0},\"stops\":[],\"airline\":[],"
+        		+ "\"timeSlots\":{},\"airports\":{}}";
 	}
 
  public static String getResp()
