@@ -1,4 +1,23 @@
 {
+  "9783873d40e690e09d594a0bfb0d89aa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1246d7ad4eb87faa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1684097300695,
+        "stop" : 1684097301171,
+        "duration" : 476
+      }
+    } ]
+  },
   "e724faa0d39b64dc0620dc1bac6bcfbf" : {
     "statistic" : {
       "failed" : 0,
@@ -9,7 +28,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c11aba08f0d9430b",
+      "uid" : "99461ff90989117b",
       "status" : "broken",
       "statusDetails" : "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"2023-05-15_2023-05-19\" (class pojo.CustPost), not marked as ignorable (7 known properties: \"stops\", \"pax\", \"timeSlots\", \"cabin\", \"leg\", \"airports\", \"airline\"])\n at [Source: (String)\"{\"2023-05-15_2023-05-19\":{\"price\":1739.84,\"updatedAt\":\"2023-05-10T12:28:24.914Z\"},\"2023-05-14_2023-05-17\":{\"price\":1641.44,\"updatedAt\":\"2023-05-02T10:34:14.013Z\"},\"2023-05-14_2023-05-15\":{\"price\":1769.6,\"updatedAt\":\"2023-05-13T06:22:59.966Z\"}}\"; line: 1, column: 27] (through reference chain: pojo.CustPost[\"2023-05-15_2023-05-19\"])",
       "time" : {
@@ -29,12 +48,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7cc9f5f2403ae15f",
+      "uid" : "ca3c8c00b2ef9a94",
       "status" : "passed",
       "time" : {
-        "start" : 1684043554617,
-        "stop" : 1684043557658,
-        "duration" : 3041
+        "start" : 1684097297708,
+        "stop" : 1684097300562,
+        "duration" : 2854
       }
     } ]
   }

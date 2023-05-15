@@ -1,5 +1,25 @@
 [ {
-  "uid" : "c11aba08f0d9430b",
+  "uid" : "ca3c8c00b2ef9a94",
+  "name" : "getCall",
+  "time" : {
+    "start" : 1684097297708,
+    "stop" : 1684097300562,
+    "duration" : 2854
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1246d7ad4eb87faa",
+  "name" : "postCall",
+  "time" : {
+    "start" : 1684097300695,
+    "stop" : 1684097301171,
+    "duration" : 476
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "99461ff90989117b",
   "name" : "postCall",
   "time" : {
     "start" : 1683978531498,
@@ -7,15 +27,5 @@
     "duration" : 5105
   },
   "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "7cc9f5f2403ae15f",
-  "name" : "getCall",
-  "time" : {
-    "start" : 1684043554617,
-    "stop" : 1684043557658,
-    "duration" : 3041
-  },
-  "status" : "passed",
   "severity" : "normal"
 } ]

@@ -46,14 +46,14 @@ public class TC_ApiCalls {
 		Leg leg1 = new Leg();
 		leg1.setOriginId("MCT");
 		leg1.setDestinationId("DXB");
-		leg1.setDepartureFrom("2023-05-14");
-		leg1.setDepartureTo("2023-05-19");
+		leg1.setDepartureFrom("2023-05-15");
+		leg1.setDepartureTo("2023-05-22");
 		
 		Leg leg2 = new Leg();
 		leg2.setOriginId("DXB");
 		leg2.setDestinationId("MCT");
-		leg2.setDepartureFrom("2023-05-14");
-		leg2.setDepartureTo("2023-05-19");
+		leg2.setDepartureFrom("2023-05-15");
+		leg2.setDepartureTo("2023-05-22");
 		
 		myFlightLeg.add(leg1);
 		myFlightLeg.add(leg2);

@@ -5,7 +5,7 @@
     "name" : "Getting Flight booking details through post",
     "children" : [ {
       "name" : "postCall",
-      "uid" : "c11aba08f0d9430b",
+      "uid" : "99461ff90989117b",
       "parentUid" : "dddda4f86327f947e3d47a1750ad9551",
       "status" : "broken",
       "time" : {
@@ -22,18 +22,35 @@
     "name" : "Validating the response through GET call",
     "children" : [ {
       "name" : "getCall",
-      "uid" : "7cc9f5f2403ae15f",
+      "uid" : "ca3c8c00b2ef9a94",
       "parentUid" : "1992dba1639c247f055cfb2dc075d95d",
       "status" : "passed",
       "time" : {
-        "start" : 1684043554617,
-        "stop" : 1684043557658,
-        "duration" : 3041
+        "start" : 1684097297708,
+        "stop" : 1684097300562,
+        "duration" : 2854
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
     "uid" : "1992dba1639c247f055cfb2dc075d95d"
+  }, {
+    "name" : "Getting Flight booking details through post/ Giving dynamic request body",
+    "children" : [ {
+      "name" : "postCall",
+      "uid" : "1246d7ad4eb87faa",
+      "parentUid" : "9c2672064746a5513f2aa042dde05855",
+      "status" : "passed",
+      "time" : {
+        "start" : 1684097300695,
+        "stop" : 1684097301171,
+        "duration" : 476
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9c2672064746a5513f2aa042dde05855"
   } ]
 }

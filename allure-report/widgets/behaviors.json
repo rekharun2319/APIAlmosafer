@@ -1,5 +1,5 @@
 {
-  "total" : 2,
+  "total" : 3,
   "items" : [ {
     "uid" : "dddda4f86327f947e3d47a1750ad9551",
     "name" : "Getting Flight booking details through post",
@@ -14,6 +14,17 @@
   }, {
     "uid" : "1992dba1639c247f055cfb2dc075d95d",
     "name" : "Validating the response through GET call",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "9c2672064746a5513f2aa042dde05855",
+    "name" : "Getting Flight booking details through post/ Giving dynamic request body",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

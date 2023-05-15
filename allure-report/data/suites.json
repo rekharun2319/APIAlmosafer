@@ -9,7 +9,7 @@
         "name" : "testCase.TC_PostCall",
         "children" : [ {
           "name" : "postCall",
-          "uid" : "c11aba08f0d9430b",
+          "uid" : "99461ff90989117b",
           "parentUid" : "7c0f1bda92e7da29283e758ecd5c1be8",
           "status" : "broken",
           "time" : {
@@ -26,13 +26,26 @@
         "name" : "testCase.TC_ApiCalls",
         "children" : [ {
           "name" : "getCall",
-          "uid" : "7cc9f5f2403ae15f",
+          "uid" : "ca3c8c00b2ef9a94",
           "parentUid" : "2b75a10b4b4b30d13fd455769e7cb52b",
           "status" : "passed",
           "time" : {
-            "start" : 1684043554617,
-            "stop" : 1684043557658,
-            "duration" : 3041
+            "start" : 1684097297708,
+            "stop" : 1684097300562,
+            "duration" : 2854
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "postCall",
+          "uid" : "1246d7ad4eb87faa",
+          "parentUid" : "2b75a10b4b4b30d13fd455769e7cb52b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1684097300695,
+            "stop" : 1684097301171,
+            "duration" : 476
           },
           "flaky" : false,
           "newFailed" : false,
